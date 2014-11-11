@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pickify.js</title>
+
+		<meta http-equiv='cache-control' content='no-cache'>
+		<meta http-equiv='expires' content='0'>
+		<meta http-equiv='pragma' content='no-cache'>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/pickify.css">
+		<link rel="stylesheet" type="text/css" href="css/prettify.css">
+		<style type="text/css">
+			span.enabled{
+				color: #26A760;
+			}
+			span.disabled{
+				color: #D84545;
+			}
+		</style>
+	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="js/html5shiv.js"></script>
+	      <script src="js/respond.min.js"></script>
+	    <![endif]-->
+		<script id="pickify-tpl" type="text/x-handlebars-template">
+			<div class="pickify">
+				<ul class="pickify-dates"></ul>
+				<div class="pickify-slider">			
+					<div class="slider-wrapper">
+						<div class="slide-bar">
+							<div class="slider">
+								<div class="handle"><div class="line"></div></div>
+							</div>
+							<div class="intervals"></div>
+						</div>
+					</div>
+					<!--<div class="clock-wrapper">
+						<div class="clock"></div>
+					</div>-->
+				</div>
+			</div>
+		</script>	    		
+	</head>
+	<body class="home">
+
+		<!-- container -->
+
+		<div class="container">
+
+			<div class="page-header">
+				<h1>Pickify.js <small><code>jQuery.Pickify();</code></small></h1>
+			</div>
+			<div>
+				<input type="hidden" id="test">
+			</div>
+			<div>
+				<p style="color:#555;font-size:11px;font-weight:bold;">This is a test button that will be disabled @ the given deadline <input id="test-button" type="button" value="Submit"> [<span class="enabled" id="button-status">Enabled</span>]</p>
+			</div>
+		</div>
+
+		<!-- container -->
+
+		<!-- footer -->
+
+		<div id="footer">
+			<div class="container">
+				<p class="text-muted">Designed by <a href="http://www.open.gr">Technopolis S.A. e-services & content</a></p>
+			</div>
+		</div>
+
+		<!-- footer -->
+
+		<script type="text/javascript" src="js/run_prettify.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/moment-with-langs.min.js"></script>
+		<script type="text/javascript" src="js/pickify.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>		
+	
+	</body>
+</html>
